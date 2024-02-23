@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*Código da navbar*/
+.divheader {
+  background-color: cornflowerblue;
+}
+
+header {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar h1 {
+  color: white;
+}
+
+.navmenu {
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+}
+
+/*Código da section "sobre a loja"*/
+
+#SobreLoja {
+  width: 1024px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: 40% 50%;
+  gap: 3%;
+}
+
+h2 {
+  color: cornflowerblue;
+}
+
+.TittleSection {
+  margin-bottom: 20px;
+}
+
+#LinhaSobre {
+  width: 100%;
+  height: 20px;
+  color: cornflowerblue;
+}
+
+.ImgDiv img {
+  width: 100%;
+}
+
+/*Código da seção de produtos*/
+
+#SectionProduct {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.DivProducts {
+  display: grid;
+  grid-template-columns: repeat(4, 19%);
+  gap: 4%;
+}
+
+.produto1,
+.produto2,
+.produto3,
+.produto4 {
+  display: block;
+  padding: 7%;
+}
+
+#img4 {
+  margin-bottom: 40px;
+}
+
+button {
+  display: flex;
+  margin: 20px auto 0 auto;
+  padding: 5px;
+  border: none;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 5px;
+}
+
+/*Código media queries 641px -> 1023px))*/
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  header {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #SobreLoja {
+    width: 80%;
+    display: block;
+  }
+
+  .ContainerDivSobre {
+    margin-top: 20px;
+  }
+
+  #SectionProduct {
+    width: 80%;
+  }
+
+  .DivProducts {
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+  }
+}
+
+/*Código media queries 640px*/
+
+@media (max-width: 640px) {
+  header {
+    width: 80%;
+  }
+
+  #SobreLoja {
+    width: 80%;
+    display: block;
+  }
+
+  .ContainerDivSobre {
+    margin-top: 20px;
+  }
+
+  #SectionProduct {
+    width: 80%;
+  }
+
+  .DivProducts {
+    display: block;
+  }
+}
